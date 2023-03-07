@@ -1,0 +1,144 @@
+/*Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/*Set color scheme*/
+:root {
+  --primary-bg: #0A0C1C;
+  --primary-dark-blue: #1B1937;
+  --accent-violet: #AB5CDB;
+  --body-txt: rgba(255, 255, 255, 0.75);
+  --title-txt: #FFFFFF;
+  --2ndtitle-txt: rgba(255, 255, 255, 0.6);
+}
+
+/*Zero out defaults*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-bg);
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: var(--body-txt);
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.stats-card {
+  width: clamp(327px, 100vw - 3rem, 1110px);
+  min-height: 446px;
+  background-color: var(--primary-dark-blue);
+  border-radius: 8px;
+  box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.203087);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 95px;
+}
+
+.insights-img-wrapper {
+  position: relative;
+  min-width: 48%;
+  min-height: 240px;
+  background-color: var(--accent-violet);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.insights-deco-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://assets.codepen.io/3270335/FEM3-image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.insights-txt {
+  padding: 4.5rem 0 3.75rem 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-weight: 700;
+  color: var(--title-txt);
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 25px;
+}
+
+.txt-color {
+  color: var(--accent-violet);
+}
+
+.pitch-p {
+  max-width: 40ch;
+}
+
+ul.stats {
+  max-width: 352px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-number {
+  font-weight: 700;
+  color: var(--title-txt);
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.stat-title {
+  font-family: Lexend Deca, sans-serif;
+  font-weight: 400;
+  color: var(--2ndtitle-txt);
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .stats-card {
+    flex-direction: column;
+    row-gap: 40px;
+    text-align: center;
+  }
+  .insights-img-wrapper, .insights-deco-img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 0;
+  }
+  .insights-deco-img {
+    background-image: url(https://assets.codepen.io/3270335/FEM3-image-header-mobile.jpg);
+  }
+  
+  .insights-txt {
+    padding: 0 2rem 2rem 2rem;
+  }
+  h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  ul.stats {
+    flex-direction: column;
+    row-gap: 1.5rem;
+    margin-top: 40px;
+  }
+}
