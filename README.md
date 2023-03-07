@@ -34,7 +34,7 @@ The source files for this project included images for desktop and mobile that we
   src="Stats card - desktop.png"
   alt="Marketing card outlining how data statistics can help a business grow"
   title="Marketing statistics card, desktop version"
-  width="300px">
+  width="500px">
 
 <img
   src="Stats card - mobile.png"
