@@ -30,6 +30,18 @@ The source files for this project included images for desktop and mobile that we
 
 ### Screenshots
 
+<img
+  src="Stats card - desktop.png"
+  alt="Marketing card outlining how data statistics can help a business grow"
+  title="Marketing statistics card, desktop version"
+  width="300px">
+
+<img
+  src="Stats card - mobile.png"
+  alt="Marketing card outlining how data statistics can help a business grow"
+  title="Marketing statistics card, mobile version"
+  width="150px">
+  
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
