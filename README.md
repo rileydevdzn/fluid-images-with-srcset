@@ -111,5 +111,5 @@ I found the resolution switching solution for responsive images useful for this 
 
 ## Author
 
-- Website - [Erin Riley](https://rileydevdzn.webflow.io)
+- Website - [rileydevdzn](https://rileydevdzn.webflow.io)
 - Frontend Mentor - [@devrileymk](https://www.frontendmentor.io/profile/devrileymk)
