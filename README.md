@@ -44,7 +44,7 @@ The source files for this project included images for desktop and mobile that we
   
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Marketing statistics preview card](https://rileydevdzn.github.io/marketing-statistics-card/)
 
 ## My process
 
