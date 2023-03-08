@@ -55,7 +55,7 @@ body {
 .insights-deco-img {
   width: 100%;
   height: 100%;
-  background-image: url("https://assets.codepen.io/3270335/FEM3-image-header-desktop.jpg");
+  background-image: url("./mktstats-image-header-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   mix-blend-mode: multiply;
@@ -126,7 +126,7 @@ ul.stats {
     border-bottom-right-radius: 0;
   }
   .insights-deco-img {
-    background-image: url(https://assets.codepen.io/3270335/FEM3-image-header-mobile.jpg);
+    background-image: url("./mktstats-image-header-mobile.jpg");
   }
   
   .insights-txt {
