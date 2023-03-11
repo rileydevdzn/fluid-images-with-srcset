@@ -9,7 +9,7 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Solution](#links)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -43,7 +43,7 @@ The source files for this project included images for desktop and mobile that we
 </div> 
 
 
-### Solution
+### Links
 
 - Solution URL: [Marketing statistics preview card](https://rileydevdzn.github.io/marketing-statistics-card/)
 
