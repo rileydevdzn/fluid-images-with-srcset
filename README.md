@@ -38,7 +38,7 @@ The source files for this project included images for desktop and mobile that we
   <img 
     src="Stats card - mobile.png"
     alt="Marketing card outlining how data statistics can help a business grow, mobile version vertical display with decorative image on top and product description with statistics on the bottom"
-    height="300px">
+    height="350px">
     <p><em>Desktop (horizontal) and mobile (vertical) designs</em></p>
 </div> 
 
