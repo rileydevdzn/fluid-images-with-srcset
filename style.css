@@ -28,7 +28,7 @@ body {
   line-height: 25px;
 }
 
-.stats-card {
+article {
   width: clamp(327px, 100vw - 3rem, 1110px);
   min-height: 446px;
   background-color: var(--primary-dark-blue);
@@ -39,47 +39,23 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: row-reverse;
-  column-gap: 95px;
-}
-
-.insights-img-wrapper {
-  position: relative;
-  min-width: 48%;
-  min-height: 240px;
-  background-color: var(--accent-violet);
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-.insights-deco-img {
-  width: 100%;
-  height: 100%;
-  background-image: url("./mktstats-image-header-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  mix-blend-mode: multiply;
-  opacity: 0.75;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  column-gap: min(9vw, 95px);
 }
 
 .insights-txt {
-  padding: 4.5rem 0 3.75rem 4.5rem;
+  padding: 6% 0 5% 6%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  row-gap: clamp(40px, 7vh, 72px);
 }
 
 h1 {
   font-weight: 700;
   color: var(--title-txt);
-  font-size: 36px;
+  font-size: clamp(28px, 3vw, 36px);
   line-height: 44px;
-  margin-bottom: 25px;
+  margin-bottom: 2vh;
 }
 
 .txt-color {
@@ -114,11 +90,51 @@ ul.stats {
   text-transform: uppercase;
 }
 
+.insights-img-wrapper {
+  position: relative;
+  min-width: 48%;
+  min-height: 240px;
+  background-color: var(--accent-violet);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.insights-deco-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("./mktstats-image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
 @media (max-width: 600px) {
-  .stats-card {
-    flex-direction: column;
-    row-gap: 40px;
+  article {
+    flex-direction: column-reverse;
+    row-gap: max(6vw, 40px);
     text-align: center;
+  }
+  .insights-txt {
+    padding: 0 2rem 2rem 2rem;
+    align-items: center;
+  }
+  h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .pitch-p {
+    margin: 0 auto;
+  }
+  ul.stats {
+    flex-direction: column;
+    row-gap: 1.5rem;
   }
   .insights-img-wrapper, .insights-deco-img {
     border-top-left-radius: 8px;
@@ -127,18 +143,5 @@ ul.stats {
   }
   .insights-deco-img {
     background-image: url("./mktstats-image-header-mobile.jpg");
-  }
-  
-  .insights-txt {
-    padding: 0 2rem 2rem 2rem;
-  }
-  h1 {
-    font-size: 28px;
-    line-height: 32px;
-  }
-  ul.stats {
-    flex-direction: column;
-    row-gap: 1.5rem;
-    margin-top: 40px;
   }
 }
