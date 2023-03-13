@@ -63,29 +63,21 @@ The source files for this project included images for desktop and mobile that we
 
 To make the image responsive, I focused on resolution switching – using an `<img>` element with the `srcset` and `media` attributes – so that the smaller image would display on mobile and the larger image would display on desktop. This worked well, but I wasn't done yet.
 
-Another styling challenge for this project was overlapping (blending) an image with the brand color. I chose to tackle this after exploring responsive images, in case I needed to make changes. This also allowed me to explore both options and decide which provided the better solution.
-
-I had previously done text overlays over images using colors and opacity, but that solution did not work here. The image was dark and difficult to make out. So I dug into the Figma design file. The designer used two backgrounds, one color and one image, and added `mix-blend-mode` to blend the layers. After some research, I discovered CSS also has this capability, with options for both `background-blend-mode` and `mix-blend-mode` properties.
+Another styling challenge for this project was overlapping (blending) an image with the brand color. I had previously done text overlays over images using colors and opacity, but that solution did not work here. The image was dark and difficult to make out. So I dug into the Figma design file. The designer used two backgrounds, one color and one image, and added `mix-blend-mode` to blend the layers. After some research, I discovered CSS also has this capability, with options for both `background-blend-mode` and `mix-blend-mode` properties.
 
 I chose `mix-blend-mode` based on how my markup was already configured. For the responsive image, I used an `<img>` element inside a parent container, like this:
 
 ```html
 <div class="insights-img-wrapper">
-    <img class="insights-deco-img" 
-       srcset="./mktstats-image-header-mobile 654w"
-       sizes="(max-width: 599px) 327px, 270px"
-       src="./mktstats-image-header-desktop"
-       alt="Group of professional women working on laptops at a large table in an office space"/>
+  <img class="insights-deco-img"
+    srcset="./mktstats-image-header-desktop.jpg 540w, ./mktstats-image-header-mobile.jpg 654w"
+    sizes="(max-width: 600px) 327px, 270px"
+    src="./mktstats-image-header-desktop.jpg"
+    alt="Group of professional women working on laptops at a large table in an office space">
 </div>
 ```
 
-First, I swapped out the `<img>` element for a `<div>` with a background image. Then I added a background color to the parent element, and used the `mix-blend-mode` property to blend the two, following the Figma design file for the settings (multiply and opacity 0.75) to match the design. 
-
-```html
-<div class="insights-img-wrapper">
-    <div class="insights-deco-img"></div>
-</div>
-```
+Then I added a background color to the parent element, and used the `mix-blend-mode` property to blend the two, following the Figma design file for the settings (multiply and opacity 0.75) to match the design. 
 
 ```CSS
 .insights-img-wrapper {
@@ -93,17 +85,14 @@ First, I swapped out the `<img>` element for a `<div>` with a background image. 
 }
 
 .insights-deco-img {
-  background-image: url("./mktstats-image-header-desktop.jpg");
   mix-blend-mode: multiply;
   opacity: 0.75;
 }
 ```
 
-Another option would have been to remove the parent element and use multiple backgrounds with the `background-blend-mode` CSS property. I chose to keep my markup as-is, since I'm interested in figuring out if there's a way to also make background images responsive. 
-
 ### Continued development
 
-I found the resolution switching solution for responsive images useful for this project; I'm adding responsive images to my toolkit for my builds going forward. I also found the `mix-blend-mode` really interesting and its something I'd like to play with and refine my skills. I'm also curious if there's a way to make background images responsive so that I can combine both approaches for the best of both worlds.
+I found the resolution switching solution for responsive images useful for this project; I'm adding responsive images to my toolkit for my builds going forward. I also found the `mix-blend-mode` really interesting and its something I'd like to play with and refine my skills. I'm also curious if there's a way to make background images responsive in a similar manner, something to investigate on a future project. 
 
 ### Useful resources
 
