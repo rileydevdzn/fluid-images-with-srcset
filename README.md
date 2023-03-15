@@ -70,9 +70,9 @@ I chose `mix-blend-mode` based on how my markup was already configured. For the 
 ```html
 <div class="insights-img-wrapper">
   <img class="insights-deco-img"
-    srcset="./mktstats-image-header-desktop.jpg 540w, ./mktstats-image-header-mobile.jpg 654w"
+    srcset="/mktstats-image-header-desktop.jpg 540w, ./mktstats-image-header-mobile.jpg 654w"
     sizes="(max-width: 600px) 327px, 270px"
-    src="./mktstats-image-header-desktop.jpg"
+    src="/mktstats-image-header-desktop.jpg"
     alt="Group of professional women working on laptops at a large table in an office space">
 </div>
 ```
@@ -102,4 +102,4 @@ I found the resolution switching solution for responsive images useful for this 
 ## Author
 
 - Website - [E. Riley](https://rileydevdzn.webflow.io)
-- Frontend Mentor - [@devrileymk](https://www.frontendmentor.io/profile/devrileymk)
+- Frontend Mentor - [@rileydevdzn](https://www.frontendmentor.io/profile/rileydevdzn)
