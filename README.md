@@ -52,7 +52,7 @@ The source files for this project included images for desktop and mobile that we
 ### Built with
 
 - Semantic HTML5 markup
-- Responsive images using the `<img>` element with `srcset` and `media` attributes
+- Responsive images using the `<img>` element with `srcset` and `sizes` attributes
 - CSS variables
 - CSS `mix-blend-mode` for blending backgrounds
 - Flexbox
