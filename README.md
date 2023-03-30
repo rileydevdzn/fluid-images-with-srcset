@@ -45,7 +45,7 @@ The source files for this project included images for desktop and mobile that we
 
 ### Links
 
-- Solution URL: [Marketing statistics preview card](https://rileydevdzn.github.io/marketing-statistics-card/)
+- Solution URL: [Marketing statistics preview card](https://rileydevdzn.github.io/fluid-images-with-srcset/)
 
 ## My process
 
